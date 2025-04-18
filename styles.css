@@ -11,6 +11,7 @@ body {
   padding: 0;
   background: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 section {
   padding: 40px 0;
@@ -130,4 +131,33 @@ h2 {
 
 .order-form button:hover {
   background: #062b66;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .gallery .container {
+ flex-direction: column;
+    
+    gap: 20px;
+  }
+
+  .gallery img {
+    height: auto;
+    width: 100%;
+  }
+
+  .features ul {
+    grid-template-columns: 1fr;
+  }
+
+  .order-form {
+    padding: 20px 10px;
+  }
 }
